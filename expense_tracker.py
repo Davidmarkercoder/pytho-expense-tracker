@@ -3,7 +3,7 @@ expenses = []
 def add_expense():
     Name = input("Enter expense name: ")
 
-    if not Name.isalpha():
+    if not Name.replace(" ", "").isalpha()
         print("invalid name! use letters only. ")
         return
     try:
@@ -28,7 +28,7 @@ def add_expense():
 
 def view_expenses():
     if not expenses:
-        print("No expemses recorded yet. ")
+        print("No expenses recorded yet. ")
         return
 
     for expense in expenses:
