@@ -3,7 +3,7 @@ expenses = []
 def add_expense():
     Name = input("Enter expense name: ")
 
-    if not Name.replace(" ", "").isalpha()
+    if not Name.replace(" ", "").isalpha():
         print("invalid name! use letters only. ")
         return
     try:
